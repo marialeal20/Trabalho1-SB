@@ -14,18 +14,13 @@ class TS{
         bool flag_pending;
         string name_symbol;
         int address;
+        int value;
         //vector <int> line;
         //TS(bool, string,int);
 };
 
-/*TS::TS(bool arg1, string arg2, int arg3){
-    flag_pending=arg1;
-    name_symbol=arg2;
-    address=arg3;
-}*/
-
 //Vetor responsável por guardar essas labels
-TS labels[MAX];
+vector <TS> labels;
 
 //Verifica se a label respeita as regras de nomes de variáveis. Se flag_verify for true, então as labels estão de acordo, senão, não estão de acordo e retornam um erro
 bool VerifyLabel(string Label){
@@ -44,6 +39,21 @@ bool VerifyLabel(string Label){
     return flag_verify;
 }
 
+int adress_code(string charaux, string charaux_ant, int code_adress){ //encontrar o endereço das labels
+    return 0;
+}
+/*
+void insertobject2vector(vector <TS> labels, bool flagpending, string charaux, int count_address, int valuen, int label_vector){
 
+    labels[label_vector].flag_pending=flagpending;
+    labels[label_vector].name_symbol=charaux;
+    labels[label_vector].address=count_address;
+    labels[label_vector].value=valuen; //Vetor de objetos
+    label_vector++;
 
+    cout<< "status: "<< labels[label_vector].flag_pending<<endl;
+    cout<< "name:" << labels[label_vector].name_symbol<<endl;
+    cout << "address" << labels[label_vector].address << endl;
+    cout << "value" << labels[label_vector].value << endl;
+}*/
 #endif// SYMBOLSTABLE_H_INCLUDED

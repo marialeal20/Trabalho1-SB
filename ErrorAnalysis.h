@@ -11,10 +11,10 @@ using namespace std;
 class Errors{
     public:
         string Error_name;
-        vector <int> Error_line;
+        int Error_line;
         string Error_msg;
 
 };
 
-Errors error_name[MAX];
+vector <Errors> error_name;
 #endif// ERRORANALYSIS_H_INCLUDED
