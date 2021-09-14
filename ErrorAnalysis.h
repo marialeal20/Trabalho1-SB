@@ -17,4 +17,34 @@ class Errors{
 };
 
 vector <Errors> error_name;
+
+int sameLineLabel(vector <TS> labels){
+    int sameLine; 
+    for(int i=0; i<labels.size();i++){
+        for (int j=0; j<labels.size(); j++){
+            if (labels[i].line==labels[j].line){
+                sameLine=1;
+            }
+            else{
+                sameLine=0;
+            }
+        }
+    }
+    return sameLine;
+}
+
+int sameNameLabel(vector <TS> labels){
+    int sameName; 
+    for(int i=0; i<labels.size();i++){
+        for (int j=0; j<labels.size(); j++){
+            if (labels[i].name_symbol==labels[j].name_symbol){
+                sameName=1;
+            }
+            else{
+                sameName=0;
+            }
+        }
+    }
+    return sameName;
+}
 #endif// ERRORANALYSIS_H_INCLUDED

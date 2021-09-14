@@ -14,7 +14,9 @@ class TS{
         bool flag_pending;
         string name_symbol;
         int address;
-        int value;
+        string value;
+        string vector_symbols;
+        int line;
         //vector <int> line;
         //TS(bool, string,int);
 };
